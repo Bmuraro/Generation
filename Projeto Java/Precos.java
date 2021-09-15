@@ -46,7 +46,8 @@ public class Precos extends Bebidas implements Adegaadm{
 		System.out.println("\n\tBem Vinde "+ nome+ " à Adega Triunfo");
 		System.out.println("\n");
 		
-			do {				
+			do {
+				
 			System.out.println("\nEscolha uma das opções de bebidas abaixo");
 			bebidas.bebidasInfo();
 			num = ler.nextInt();
@@ -176,7 +177,7 @@ public class Precos extends Bebidas implements Adegaadm{
 					System.out.println("\nSaldo insuficiente!");	
 					System.out.println("\nColoque uma forma de pagamento valida!");
 				}
-				else if(diners > somaTotal) {
+				else {
 					System.out.println("\nCompra aprovada!");
 					System.out.println("\nObrigado por comprar na: "+Adegaadm.nome);
 					System.out.println("\nCaso queira visitar um de nossos locais: "+Adegaadm.endereco);	
